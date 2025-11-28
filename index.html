@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yashraj Upadhyay - Portfolio</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full glass z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text font-mono">
+                    &lt;Yashraj/&gt;
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-300 hover:text-white font-medium">Home</a>
+                    <a href="#about" class="nav-link text-gray-300 hover:text-white font-medium">About</a>
+                    <a href="#education" class="nav-link text-gray-300 hover:text-white font-medium">Education</a>
+                    <a href="#skills" class="nav-link text-gray-300 hover:text-white font-medium">Skills</a>
+                    <a href="#projects" class="nav-link text-gray-300 hover:text-white font-medium">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-white font-medium">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-800">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="#home" class="nav-link text-gray-300 hover:text-white">Home</a>
+                    <a href="#about" class="nav-link text-gray-300 hover:text-white">About</a>
+                    <a href="#education" class="nav-link text-gray-300 hover:text-white">Education</a>
+                    <a href="#skills" class="nav-link text-gray-300 hover:text-white">Skills</a>
+                    <a href="#projects" class="nav-link text-gray-300 hover:text-white">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen bg-pattern flex items-center justify-center pt-20 relative overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div
+                class="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse">
+            </div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"
+                style="animation-delay: 2s;"></div>
+        </div>
+
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="fade-in">
+                <!-- Profile Image -->
+                <div class="mb-12">
+                    <div class="profile-image">
+                        <img src="img.png" alt="Your Profile Photo" />
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <span
+                        class="inline-block px-4 py-2 bg-gray-900 border border-gray-700 rounded-full text-sm font-mono text-gray-300 mb-4">
+                        <i class="fas fa-code mr-2 text-purple-400"></i>
+                        Available for opportunities
+                    </span>
+                </div>
+
+                <h1 class="text-6xl md:text-8xl font-black mb-6 leading-tight">
+                    <span class="gradient-text">Yashraj Upadhyay</span>
+                </h1>
+
+                <h2 class="text-2xl md:text-3xl text-gray-300 mb-8 font-light">
+                    Full Stack Developer <span class="text-purple-400"></span>
+                </h2>
+
+                <p class="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto mb-12 leading-relaxed font-light">
+                    Crafting digital experiences with <span class="gradient-text font-semibold">Java</span>,
+                    <span class="gradient-text font-semibold">.NET</span>, and
+                    <span class="gradient-text font-semibold">Django</span>.
+                    Passionate about building scalable solutions and contributing to open source.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <a href="https://www.linkedin.com/in/yashraj-upadhyay-339881249/" target="_blank"
+                        class="btn-glow gradient-primary px-10 py-4 rounded-full text-white font-semibold flex items-center gap-3 hover-lift text-lg">
+                        <i class="fab fa-linkedin text-xl"></i>
+                        Connect on LinkedIn
+                    </a>
+                    <a href="https://github.com/yashrajupadhyay" target="_blank"
+                        class="btn-glow glass-card px-10 py-4 rounded-full text-white font-semibold flex items-center gap-3 hover-lift text-lg border-gray-700">
+                        <i class="fab fa-github text-xl"></i>
+                        View GitHub
+                    </a>
+                </div>
+
+                <div class="mt-16">
+                    <a href="#about" class="inline-block animate-bounce">
+                        <i class="fas fa-chevron-down text-2xl text-gray-400 hover:text-white transition-colors"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-24 relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl md:text-6xl font-black mb-6 gradient-text fade-in">About Me</h2>
+                    <div class="w-24 h-1 gradient-primary mx-auto rounded-full fade-in"></div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="fade-in-left">
+                        <div class="glass-card rounded-3xl p-10 hover-lift">
+                            <div class="mb-8">
+                                <h3 class="text-3xl font-bold mb-4 text-white">My Journey</h3>
+                                <div class="w-16 h-1 gradient-secondary rounded-full"></div>
+                            </div>
+                            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                                I'm a dedicated software developer currently pursuing my MCA at LJ University,
+                                Ahmedabad.
+                                My journey began during my BCA at RK University, where I discovered my passion for
+                                backend technologies and full-stack development.
+                            </p>
+                            <p class="text-lg text-gray-300 leading-relaxed">
+                                I thrive on solving complex problems, building scalable applications, and continuously
+                                learning new technologies. My goal is to contribute to innovative projects that make
+                                a real impact.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fade-in-right">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="glass-card rounded-2xl p-6 text-center hover-lift">
+                                <div
+                                    class="gradient-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-code text-2xl text-white"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-2">5+</h4>
+                                <p class="text-gray-400">Projects Completed</p>
+                            </div>
+
+                            <div class="glass-card rounded-2xl p-6 text-center hover-lift">
+                                <div
+                                    class="gradient-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-graduation-cap text-2xl text-white"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-2">MCA</h4>
+                                <p class="text-gray-400">Current Degree</p>
+                            </div>
+
+                            <div class="glass-card rounded-2xl p-6 text-center hover-lift">
+                                <div
+                                    class="gradient-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-laptop-code text-2xl text-white"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-2">8+</h4>
+                                <p class="text-gray-400">Technologies</p>
+                            </div>
+
+                            <div class="glass-card rounded-2xl p-6 text-center hover-lift">
+                                <div
+                                    class="gradient-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-heart text-2xl text-white"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-2">∞</h4>
+                                <p class="text-gray-400">Passion Level</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Education Section -->
+    <section id="education" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black mb-6 gradient-text fade-in">Education</h2>
+                <div class="w-24 h-1 gradient-primary mx-auto rounded-full fade-in"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-12">
+                    <!-- MCA Card -->
+                    <div class="timeline-item fade-in">
+                        <div class="glass-card rounded-3xl p-10 hover-lift">
+                            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                                <div>
+                                    <h3 class="text-3xl font-bold text-white mb-2">Master of Computer Applications</h3>
+                                    <p class="text-xl text-purple-400 font-semibold">LJ University, Ahmedabad</p>
+                                </div>
+                                <div class="mt-4 lg:mt-0">
+                                    <span
+                                        class="gradient-primary px-6 py-3 rounded-full text-white font-semibold text-lg">
+                                        2025 - 2027
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="text-lg text-gray-300 leading-relaxed">
+                                Currently pursuing advanced studies in computer applications with a focus on full-stack
+                                development,
+                                software engineering principles, and modern web technologies. Maintaining excellent
+                                academic performance
+                                while working on practical projects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- BCA Card -->
+                    <div class="timeline-item fade-in">
+                        <div class="glass-card rounded-3xl p-10 hover-lift">
+                            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                                <div>
+                                    <h3 class="text-3xl font-bold text-white mb-2">Bachelor of Computer Applications
+                                    </h3>
+                                    <p class="text-xl text-purple-400 font-semibold">RK University</p>
+                                </div>
+                                <div class="mt-4 lg:mt-0">
+                                    <span
+                                        class="glass border border-gray-600 px-6 py-3 rounded-full text-white font-semibold text-lg">
+                                        2022 - 2025
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="text-lg text-gray-300 leading-relaxed">
+                                Built a strong foundation in computer applications, programming fundamentals, database
+                                management,
+                                and software development principles. Graduated with distinction and developed a passion
+                                for
+                                backend technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black mb-6 gradient-text fade-in">Technical Skills</h2>
+                <div class="w-24 h-1 gradient-primary mx-auto rounded-full fade-in"></div>
+                <p class="text-xl text-gray-400 mt-6 fade-in">Technologies I work with</p>
+            </div>
+
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <!-- Java -->
+                    <div class="skill-card glass-card rounded-2xl p-8 text-center fade-in">
+                        <div
+                            class="gradient-primary w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i class="fab fa-java text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Java</h3>
+                        <p class="text-gray-400 text-sm">Backend Development</p>
+                    </div>
+
+                    <!-- ASP.NET -->
+                    <div class="skill-card glass-card rounded-2xl p-8 text-center fade-in">
+                        <div
+                            class="gradient-secondary w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-code text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">ASP.NET</h3>
+                        <p class="text-gray-400 text-sm">Web Framework</p>
+                    </div>
+
+                    <!-- Java Full Stack -->
+                    <div class="skill-card glass-card rounded-2xl p-8 text-center fade-in">
+                        <div
+                            class="gradient-accent w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-layer-group text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Full Stack</h3>
+                        <p class="text-gray-400 text-sm">End-to-End Development</p>
+                    </div>
+
+                    <!-- Django -->
+                    <div class="skill-card glass-card rounded-2xl p-8 text-center fade-in">
+                        <div
+                            class="gradient-primary w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i class="fab fa-python text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Django</h3>
+                        <p class="text-gray-400 text-sm">Python Framework</p>
+                    </div>
+
+                    <!-- HTML -->
+                    <div class="skill-card glass-card rounded-2xl p-8 text-center fade-in">
+                        <div
+                            class="gradient-secondary w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i class="fab fa-html5 text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">HTML5</h3>
+                        <p class="text-gray-400 text-sm">Markup Language</p>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="skill-card glass-card rounded-2xl p-8 text-center fade-in">
+                        <div
+                            class="gradient-accent w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i class="fab fa-css3-alt text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">CSS3</h3>
+                        <p class="text-gray-400 text-sm">Styling & Animation</p>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card glass-card rounded-2xl p-8 text-center fade-in">
+                        <div
+                            class="gradient-primary w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i class="fab fa-js-square text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">JavaScript</h3>
+                        <p class="text-gray-400 text-sm">Frontend Logic</p>
+                    </div>
+
+                    <!-- SQL -->
+                    <div class="skill-card glass-card rounded-2xl p-8 text-center fade-in">
+                        <div
+                            class="gradient-secondary w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-database text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">SQL</h3>
+                        <p class="text-gray-400 text-sm">Database Management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black mb-6 gradient-text fade-in">Featured Projects</h2>
+                <div class="w-24 h-1 gradient-primary mx-auto rounded-full fade-in"></div>
+                <p class="text-xl text-gray-400 mt-6 fade-in">Academic projects showcasing my skills</p>
+            </div>
+
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
+                    <!-- Project 1: Android Chat App -->
+                    <div class="project-card glass-card rounded-3xl p-8 fade-in">
+                        <div
+                            class="gradient-primary rounded-2xl h-56 mb-8 flex items-center justify-center relative overflow-hidden">
+                            <i class="fab fa-android text-6xl text-white"></i>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                        <div class="mb-6">
+                            <span
+                                class="inline-block px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm font-medium mb-4">
+                                Mobile App
+                            </span>
+                            <h3 class="text-2xl font-bold text-white mb-4">Android Chat Application</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Real-time messaging app with end-to-end encryption, user authentication,
+                                and modern Material Design UI for seamless communication experience.
+                            </p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">Java</span>
+                                <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">Android
+                                    Studio</span>
+                                <span
+                                    class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm">Firebase</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="flex-1 glass border border-gray-600 hover:border-purple-500 text-white py-3 px-4 rounded-xl text-center transition-all duration-300 hover:bg-purple-500/10">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                            <a href="#"
+                                class="flex-1 gradient-primary py-3 px-4 rounded-xl text-center text-white font-semibold hover-lift">
+                                <i class="fas fa-external-link-alt mr-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Food Ordering System -->
+                    <div class="project-card glass-card rounded-3xl p-8 fade-in">
+                        <div
+                            class="gradient-secondary rounded-2xl h-56 mb-8 flex items-center justify-center relative overflow-hidden">
+                            <i class="fas fa-utensils text-6xl text-white"></i>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                        <div class="mb-6">
+                            <span
+                                class="inline-block px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm font-medium mb-4">
+                                Web Application
+                            </span>
+                            <h3 class="text-2xl font-bold text-white mb-4">Food Ordering & Table Booking</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Complete restaurant management system with online ordering, table reservations,
+                                payment processing, and comprehensive admin dashboard.
+                            </p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">ASP.NET</span>
+                                <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">C#</span>
+                                <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">SQL
+                                    Server</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="flex-1 glass border border-gray-600 hover:border-purple-500 text-white py-3 px-4 rounded-xl text-center transition-all duration-300 hover:bg-purple-500/10">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                            <a href="#"
+                                class="flex-1 gradient-secondary py-3 px-4 rounded-xl text-center text-white font-semibold hover-lift">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Book Trading App -->
+                    <div class="project-card glass-card rounded-3xl p-8 fade-in">
+                        <div
+                            class="gradient-accent rounded-2xl h-56 mb-8 flex items-center justify-center relative overflow-hidden">
+                            <i class="fas fa-book text-6xl text-white"></i>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                        <div class="mb-6">
+                            <span
+                                class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium mb-4">
+                                Desktop App
+                            </span>
+                            <h3 class="text-2xl font-bold text-white mb-4">Book Trading Platform</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Desktop application for book marketplace with inventory management,
+                                user profiles, secure transactions, and detailed analytics.
+                            </p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">C# .NET</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">WinForms</span>
+                                <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">SQL
+                                    Server</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="flex-1 glass border border-gray-600 hover:border-purple-500 text-white py-3 px-4 rounded-xl text-center transition-all duration-300 hover:bg-purple-500/10">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                            <a href="#"
+                                class="flex-1 gradient-accent py-3 px-4 rounded-xl text-center text-white font-semibold hover-lift">
+                                <i class="fas fa-download mr-2"></i>Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Tic-Tac-Toe Web -->
+                    <div class="project-card glass-card rounded-3xl p-8 fade-in">
+                        <div
+                            class="gradient-primary rounded-2xl h-56 mb-8 flex items-center justify-center relative overflow-hidden">
+                            <i class="fas fa-gamepad text-6xl text-white"></i>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                        <div class="mb-6">
+                            <span
+                                class="inline-block px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm font-medium mb-4">
+                                Web Game
+                            </span>
+                            <h3 class="text-2xl font-bold text-white mb-4">Tic-Tac-Toe (Web)</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Interactive web-based game with smooth animations, AI opponent,
+                                score tracking, and responsive design for all devices.
+                            </p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm">JavaScript</span>
+                                <span
+                                    class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">HTML5</span>
+                                <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">CSS3</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="flex-1 glass border border-gray-600 hover:border-purple-500 text-white py-3 px-4 rounded-xl text-center transition-all duration-300 hover:bg-purple-500/10">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                            <a href="#"
+                                class="flex-1 gradient-primary py-3 px-4 rounded-xl text-center text-white font-semibold hover-lift">
+                                <i class="fas fa-play mr-2"></i>Play Game
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Tic-Tac-Toe Desktop -->
+                    <div class="project-card glass-card rounded-3xl p-8 fade-in">
+                        <div
+                            class="gradient-secondary rounded-2xl h-56 mb-8 flex items-center justify-center relative overflow-hidden">
+                            <i class="fas fa-desktop text-6xl text-white"></i>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                        <div class="mb-6">
+                            <span
+                                class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm font-medium mb-4">
+                                Desktop Game
+                            </span>
+                            <h3 class="text-2xl font-bold text-white mb-4">Tic-Tac-Toe (Desktop)</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Feature-rich desktop game with AI difficulty levels, game statistics,
+                                customizable themes, and tournament mode.
+                            </p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">C# .NET</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">WinForms</span>
+                                <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">AI
+                                    Logic</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="flex-1 glass border border-gray-600 hover:border-purple-500 text-white py-3 px-4 rounded-xl text-center transition-all duration-300 hover:bg-purple-500/10">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                            <a href="#"
+                                class="flex-1 gradient-secondary py-3 px-4 rounded-xl text-center text-white font-semibold hover-lift">
+                                <i class="fas fa-download mr-2"></i>Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black mb-6 gradient-text fade-in">Let's Connect</h2>
+                <div class="w-24 h-1 gradient-primary mx-auto rounded-full fade-in"></div>
+                <p class="text-xl text-gray-400 mt-6 fade-in">Ready to collaborate on your next project?</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="glass-card rounded-3xl p-12 fade-in">
+                    <div class="text-center mb-12">
+                        <h3 class="text-3xl font-bold text-white mb-4">Get In Touch</h3>
+                        <p class="text-lg text-gray-400">
+                            I'm always open to discussing new opportunities, interesting projects,
+                            or just having a chat about technology.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Email -->
+                        <div class="text-center group">
+                            <div
+                                class="gradient-primary w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-envelope text-2xl text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-3">Email</h4>
+                            <a href="/cdn-cgi/l/email-protection#efb4b6809a9dcfaa828e8683cfae8b8b9d8a9c9cb2"
+                                class="text-purple-400 hover:text-purple-300 transition-colors duration-300 text-lg">
+                                yupadhyay404@rku.ac.in
+                            </a>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <div class="text-center group">
+                            <div
+                                class="gradient-secondary w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-linkedin text-2xl text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-3">LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/yashraj-upadhyay-339881249/" target="_blank"
+                                class="text-purple-400 hover:text-purple-300 transition-colors duration-300 text-lg">
+                                Connect with me
+                            </a>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="text-center group">
+                            <div
+                                class="gradient-accent w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-github text-2xl text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-3">GitHub</h4>
+                            <a href="https://github.com/yashrajupadhyay" target="_blank"
+                                class="text-purple-400 hover:text-purple-300 transition-colors duration-300 text-lg">
+                                View my repositories
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-12">
+                        <!-- <a href="/cdn-cgi/l/email-protection#065d5f69737426436b676f6a26476262746375755b"
+                            class="btn-glow gradient-primary px-10 py-4 rounded-full text-white font-semibold text-lg hover-lift inline-flex items-center gap-3">
+                            <i class="fas fa-paper-plane"></i>
+                            Send me a message
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <div class="mb-6">
+                    <div class="text-2xl font-bold gradient-text font-mono">
+                        &lt;Yashraj Upadhyay&gt;
+                    </div>
+                </div>
+                <p class="text-gray-400 text-lg">
+                    © 2025 Yashraj Upadhyay <span class="text-red-400"></span> <span class="text-yellow-400"></span>
+                </p>
+                <p class="text-gray-500 text-sm mt-2">
+
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
